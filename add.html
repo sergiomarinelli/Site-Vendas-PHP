@@ -1,0 +1,129 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link href="./styles/styles.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    />
+    <title>EletronicBuy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="contentMenu">
+      <div class="menu">
+  
+        <a href="/trabalhoWEB"><h3><i class="fa fa-mobile" aria-hidden="true"></i>EletronicBuy</h3></a>
+        <div class="buttonsMenu">
+          
+          <a href="promocoes.php"><button class="buttonMP">Promoções</button></a>
+          <a href="listarProduto.php"><button class="buttonMP">Todos os produtos</button></a>
+          <a href="add.html"><button class="buttonMP">Cadastro de produtos</button></a>
+          <a href="manipularProduto.php"><button class="buttonMP">Gerenciar produtos</button></a>
+  
+        </div>
+  
+      </div>
+    </div>
+    </div>
+    <div class="content">
+      <img class="imgfundo" src="./images/background.jpg" />
+      <div class="conteudo2">
+        <div class="conteudoCadastro2">
+          <h1 class="tituloCadastro">Cadastro de produtos</h1>
+          <form
+            class="formCadastro"
+            action="add.php"
+            method="post"
+            name="form1"
+            enctype="multipart/form-data"
+          >
+            <div class="inputsCadastro">
+              <div class="imagem">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player
+                  src="https://assets2.lottiefiles.com/packages/lf20_xjhwr9wv.json"
+                  background="transparent"
+                  speed="1"
+                  style="width: 600px; height: 600px"
+                  loop
+                  autoplay
+                ></lottie-player>
+              </div>
+              <div class="inputs">
+                <div class="info">Insira as informações do produto</div>
+                <div class="nomeProduto">
+                  <p class="nameProduto">Nome do produto:</p>
+                  <input type="text" name="titulo" />
+                </div>
+                <div class="nomeProduto">
+                  <p class="descProduto">Descrição:</p>
+                  <input type="text" name="descricao" />
+                </div>
+                <div class="nomeProduto">
+                  <p class="selectProduto">Porcentagem Desconto:</p>
+                  <input type="text" name="porc_desconto" />
+                </div>
+                <div class="nomeProduto">
+                  <p>Preço:</p>
+                  <input type="text" name="preco" />
+                </div>
+                <div class="nomeProduto">
+                  <p class="estoProduto">Estoque:</p>
+                  <input type="text" name="estoque" />
+                </div>
+                <div class="nomeProduto">
+                  <p class="descProduto">Situação:</p>
+                  <select class="selectCadastro" name="situacao" id="">
+                    <option value="disponivel" name="disponivel">
+                      Disponível
+                    </option>
+                    <option value="indisponivel" name="indisponivel">
+                      Indisponivel
+                    </option>
+                    <option value="oferta" name="oferta">Oferta</option>
+                  </select>
+                </div>
+                <div class="nomeProduto">
+                  <p class="selectProduto">Selecione a foto do produto:</p>
+                  <input class="file" type="file" required name="file" />
+                </div>
+                <div class="botaoCadastrar">
+                  <input
+                    class="buttonCadastro"
+                    type="submit"
+                    name="Submit"
+                    value="Adicionar"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <a href="https://instagram.com" class="redesSociais">
+        <i class="fab fa-instagram"></i>Instagram</a
+      >
+      <a href="https//:instagram.com" class="redesSociais"
+        ><i class="fab fa-twitter"></i>Twitter</a
+      >
+      <a href="https//:instagram.com" class="redesSociais"
+        ><i class="fab fa-facebook"></i>Facebook</a
+      >
+    </footer>
+  </body>
+</html>
